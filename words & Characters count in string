@@ -1,0 +1,5 @@
+string=input("enter string:")
+no_of_characters=len(string)
+no_of_words=len(string.split())
+print("number of characters in string is : ",no_of_characters)
+print("number of words in string is : ",no_of_words)
