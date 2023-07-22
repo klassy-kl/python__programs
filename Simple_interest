@@ -1,0 +1,7 @@
+amount=float(input("enter amount : "))
+rate=float(input("enter rate of interest : "))
+time=float(input("enter time in months : "))
+simple_interest=(amount*rate*time)/100
+total_amount_to_pay=amount+simple_interest
+print("simple intrest is : ",simple_interest)
+print("total amount to pay is : ",total_amount_to_pay)
