@@ -1,0 +1,8 @@
+def maxlist(list):
+    max=list[0]
+    for i in list:
+        if i>max:
+            max=i
+    return max
+list=[20,49,24,76,20,2,3,56] 
+print(maxlist(list))
