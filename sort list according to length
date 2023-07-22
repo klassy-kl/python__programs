@@ -1,0 +1,5 @@
+def sorting(list):
+    list.sort(key=len)
+    return list
+list=["sivareddy","sai","varun","venkatesh"]
+print(sorting(list))
