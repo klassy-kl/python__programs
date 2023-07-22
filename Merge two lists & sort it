@@ -1,0 +1,16 @@
+a=[]
+b=[]
+n1=int(input("enter number of elements in a:"))
+for i in range(n1):
+    num=int(input("enter number:"))
+    a.append(num)
+n2=int(input("enter number of elements in b:"))
+for i in range(n2):
+    num=int(input("enter number:"))
+    b.append(num) 
+print(a) 
+print(b)
+c=a+b
+print(c)
+c.sort()
+print(c)
