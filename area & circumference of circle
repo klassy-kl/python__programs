@@ -1,0 +1,6 @@
+pi=3.14
+radius=float(input("enter radius: "))
+area_of_circle=pi*radius*radius
+circumference=2*pi*radius
+print("area of circle is",area_of_circle)
+print("circumference of circle is %.1f"%circumference)
