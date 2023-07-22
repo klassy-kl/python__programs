@@ -1,0 +1,8 @@
+n=int(input("enter number of subjects : "))
+arr=[]
+for i in range(n):
+    num=float(input("enter marks {} subject:".format(i+1)))
+    arr.append(num)
+average=(sum(arr))/n
+print(f"average of all {n} subjects is:%.2f"%average)
+    
