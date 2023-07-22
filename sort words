@@ -1,0 +1,4 @@
+string=input("enter string:")
+a=string.split()
+a.sort()
+print("sorted words in a string is:",a)
