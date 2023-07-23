@@ -1,0 +1,4 @@
+a={'k': 1, 's': 25, 'm': 10, 'd': 7, 'v': 18}
+key=input("enter key:")
+if key in a.keys():
+    print("key is",a[key])
