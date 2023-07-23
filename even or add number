@@ -1,0 +1,7 @@
+n=int(input("enter n: "))
+if n<=0:
+    print("enter positive numbers")
+elif n%2==0:
+    print(n,"is even number") 
+else:
+    print(n,"is odd number")
