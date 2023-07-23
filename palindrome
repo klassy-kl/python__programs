@@ -1,0 +1,6 @@
+string=input("enter string:")
+reversed_str=string[::-1]
+if string==reversed_str:
+    print('palin')
+else:
+    print('not palin')
