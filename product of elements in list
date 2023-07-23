@@ -1,0 +1,7 @@
+a=[1,13,4,9,6]
+def mylist(a):
+    result=1
+    for i in a:
+        result=result*i
+    return result  
+print(mylist(a))    
