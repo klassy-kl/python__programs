@@ -1,0 +1,3 @@
+string=input("enter string:")
+b="".join(string.split())
+print(b)
