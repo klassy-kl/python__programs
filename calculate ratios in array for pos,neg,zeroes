@@ -1,0 +1,22 @@
+def calculate_ratio(arr):
+    n=len(arr)
+    pc=0
+    nc=0
+    zc=0
+    for i in arr:
+        if i>0:
+            pc+=1
+        elif i<0:
+            nc+=1
+        else:
+            zc+=1
+        
+        pr=pc/n
+        nr=nc/n
+        zr=zc/n
+    print(f"{pr:.6f}")
+    print(f"{nr:.6f}")    
+    print(f"{zr:.6f}")
+arr=[-4,3,-9,0,4,1] 
+calculate_ratio(arr)
+            
