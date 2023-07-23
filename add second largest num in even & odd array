@@ -1,0 +1,18 @@
+array=[]
+even_array=[]
+odd_array=[]
+n=int(input("enter length of array:"))
+    
+for i in range(n):
+    number=int(input("enter element at {} index is:".format(i)))
+    array.append(number)
+    if i%2==0:
+        even_array.append(array[i])
+    else:
+        odd_array.append(array[i])
+            
+even_array=sorted(even_array)
+odd_array=sorted(odd_array)
+print("evenarray_aftersorted:",even_array)
+print("oddarray_aftersorted:",odd_array)
+print("second_largest_element:",even_array[-2]+odd_array[-2])
