@@ -1,0 +1,15 @@
+p=[]
+c=[]
+a=int(input("a from : "))
+b=int(input("b   to : "))
+for n in range(a, b+1):
+    if n>1:
+        for x in range(2, n):
+            if n % x == 0:
+                c.append(n)
+                break
+        else:
+            p.append(n)
+print("composite numbers are : ",c)
+print("prime numbers are : ",p)
+
