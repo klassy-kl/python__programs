@@ -1,0 +1,9 @@
+binary_num=int(input("enter binary_num: "))
+decimal_num=0
+i=0
+while binary_num!=0:
+    remainder=binary_num%10
+    decimal_num=decimal_num+remainder*(2**i)
+    binary_num=binary_num//10
+    i+=1
+print(decimal_num)   
