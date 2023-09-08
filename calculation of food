@@ -1,0 +1,18 @@
+def calculate(r,unit,arr,n):
+    if n==0:
+        return '-1' 
+    total_food_required=r*unit
+    food_till_now=0
+    i=0
+    for i in range(n):
+        food_till_now+=arr[i]
+        if food_till_now>=total_food_required:
+            break 
+    if total_food_required>food_till_now:
+        return 0
+        
+    return i+1 
+    
+arr=[2,8,3,5,7,4,1,2]   
+print(calculate(7,2,arr,8))    
+        
