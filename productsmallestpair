@@ -1,0 +1,17 @@
+def productsmallestpair(sum,arr):
+    n=len(arr)
+    if n<2:
+        print('-1')
+    arr=sorted(arr)    
+    for i in range(n-1):
+        if arr[i]+arr[i]<sum:
+            print(arr[i]*arr[i+1])
+            break 
+    else:
+        print('0')
+
+arr=[5,2,4,3,9,7,1]
+productsmallestpair(7,arr)
+        
+        
+        
