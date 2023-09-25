@@ -1,0 +1,14 @@
+inp='[]()'
+def isbalance(inp):
+    stack=[]
+    lookinto={'}':'{',']':'[',')':'('}
+    for paren in inp:
+        if paren in lookinto.values():
+            stack.append(paren)
+        elif stack and lookinto[paren]==stack[-1]:
+            stack.pop()
+        else:
+            return False    
+        
+    return stack==[]    
+print(isbalance(inp))
