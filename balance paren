@@ -1,14 +1,24 @@
-inp='[]()'
-def isbalance(inp):
-    stack=[]
-    lookinto={'}':'{',']':'[',')':'('}
-    for paren in inp:
-        if paren in lookinto.values():
-            stack.append(paren)
-        elif stack and lookinto[paren]==stack[-1]:
-            stack.pop()
-        else:
-            return False    
-        
-    return stack==[]    
-print(isbalance(inp))
+def is_balanced_parentheses(expression):
+    stack = []
+    opening_brackets = "({["
+    closing_brackets = ")}]"
+
+    for char in expression:
+        if char in opening_brackets:
+            stack.append(char)
+        elif char in closing_brackets:
+            if not stack:
+                return False  # (There's a closing bracket without a corresponding opening bracket)
+            top = stack.pop()
+            if opening_brackets.index(top) != closing_brackets.index(char):
+                return False  #( The opening and closing brackets do not match)
+
+    # Check if there are any unmatched opening brackets left
+    return len(stack) == 0  
+
+# Test cases
+print(is_balanced_parentheses("()"))  
+print(is_balanced_parentheses("()[]{}")) 
+print(is_balanced_parentheses("(]")) 
+print(is_balanced_parentheses("([)]"))  
+print(is_balanced_parentheses("{[]}"))
