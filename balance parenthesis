@@ -1,0 +1,16 @@
+inp='(){}()'
+def isbalance(inp):
+    stack=[]
+    dic={'}':'{',']':'[',')':'(',}
+    for p in inp:
+        if p in dic.values():
+            stack.append(p)
+        elif stack and dic[p] == stack[-1]:
+            stack.pop()
+        else:
+            return False
+    
+   
+    return stack==[]
+    
+print(isbalance(inp))    
