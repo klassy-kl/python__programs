@@ -1,0 +1,11 @@
+def primefactors(n):
+    factors=[]
+    divisor=2
+    while divisor<=n:
+        if n%divisor==0:
+            factors.append(divisor)
+            n//=divisor
+        else:
+            divisor+=1
+    return factors
+print(primefactors(1111))            
