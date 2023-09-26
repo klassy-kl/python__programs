@@ -1,0 +1,15 @@
+def smallest_missing(arr):
+    positive=set()
+    for i in arr:
+        if i>0:
+            positive.add(i)
+            
+    miss=1        
+    while miss in positive:
+        miss+=1
+    print(miss)
+  
+arr=[1,2,3,5,6]    
+smallest_missing(arr)      
+
+         
