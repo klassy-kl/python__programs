@@ -1,0 +1,27 @@
+num=int(input('enter number:'))
+c='r'
+dis=10
+x,y=0,0 
+for i in range(num):
+    if c=='r':
+        x+=dis
+        c='u'
+        dis+=10
+    elif c=='u':
+        y+=dis
+        c='l'
+        dis+=10
+    elif c=='l':
+        x-=dis
+        c='d'
+        dis+=10
+    elif c=='d':
+        y-=dis
+        c='a'
+        dis+=10
+    elif c=='a':
+        x+=dis
+        c='r'
+        dis+=10
+print(x,y)        
+    
