@@ -1,0 +1,16 @@
+n=10
+five=two=one=0
+temp=n
+if n>5:
+    while temp%5!=0:
+        temp=temp-1
+    five=temp//5-1   
+    temp=n-(5*five)
+
+if temp%2==0:
+    one=2
+else:
+    one=1 
+temp=temp-one
+two=temp//2
+print((five+two+one),five,two,one)
