@@ -2,3 +2,5 @@ a={'k':1,'s':25,'m':10}
 b={'d':7,'v':18}
 a.update(b)
 print(a)
+
+#dicty
